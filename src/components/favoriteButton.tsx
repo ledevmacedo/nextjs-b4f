@@ -1,15 +1,16 @@
 "use client"
 
 import { useState } from "react"
+import { Button } from "./ui/button"
 
 export function FavouriteButton({ name }: { name: string }) {
 
     const [saved, setSaved] = useState<boolean>(false)
 
     return (
-        <button className="border border-red-500"
+        <Button variant="success"
             onClick={() => setSaved((current) => !current)}>
             {saved ? name + " guardado" : "Guardar " + name}
-        </button>
+        </Button>
     )
 }

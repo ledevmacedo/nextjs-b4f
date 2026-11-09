@@ -1,5 +1,6 @@
 
 import { RestaurantCard } from "@/components/restaurantCard";
+import { Button } from "@/components/ui/button";
 import { restaurants } from "@/data/restaurants";
 
 export default function Restaurantes() {
@@ -13,6 +14,10 @@ export default function Restaurantes() {
                         restaurant={restaurant}
                     />
                 ))}
+                <div> botao aqui
+
+                    <Button variant="success">Click Here!</Button>
+                </div>
             </div>
 
         </>
